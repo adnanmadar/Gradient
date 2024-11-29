@@ -21,6 +21,42 @@ body {
 
 }
 
+.fade {
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 50%;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    height: 200px;
+    width: 200px;
+}
+
+#large{
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 50%;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+}
+
+#small{
+    backdrop-filter: blur(25px) saturate(200%);
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 50%;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 220px;
+    opacity: 50%;
+}
 
 
 .card{
@@ -35,6 +71,8 @@ body {
     background-color: rgba(255, 255, 255, 0.55);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
+    margin: 0;
+    padding top: 100px;
 
    
 }
@@ -46,34 +84,70 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 10px;
     /* flex-direction: row; */
 
 }
+
+.circle {
+    height: 80px;
+    width: 50px;
+    display: flex;
+    align-items: center
+    /* position: absolute; */
+    
+    /* border-radius: 50%; */
+    /* background-color: red; */
+    /* margin-right: 20px; */
+    /* background-color: darkorange; */
+    
+}
+
+.o1 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white
+    
+}
+
+.o2 {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: relative;
+    right: 5px;
+    background-color: #4672CD
+
+    
+    
+}
+
+
 
  .nav1{
     height: 80px;
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    /* justify-content: center; */
+    text-size-adjust: space-between;
     /* background-color: blueviolet; */
     
    
 }
 
-.nav1 1st{
-    height: 20px;
-    width: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: darkmagenta;
- 
+.space {
+    height: 80px;
+    width: 10%;
+    /* background-color: aqua; */
 }
 
+
 .nav2{
-    height: 80px;
-    width: 50%;
+    /* height: 80px; */
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -82,39 +156,55 @@ nav{
 
 }
 .text{
-    height: 100px;
+    height: 500px;
     width:50% ;
-    display: flex;
-
+    display: flex; 
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: black;
+    padding-top: 50px;
+    position: relative;
+    left: 50px;
 
 }
 
 .text h1{
-    font-size: 50px;
+    font-size: 40px;
     color: black !important;
+    position: relative;
+    right: 60px;
 }
 
+.text p{
+    font-size: 15px;
+    color: #4a3f65;
+    position: relative;
+    right: 15px;
+    top: 20px;
+}
 .button{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    
 }
 
 .img{
-    height: 500px;
+    height: 400px;
     width: 50%;
     background-image: url(./bg\ img.png);
     background-position: center;
     background-size: cover;
     display: flex;
+    /* padding-bottom: 150px; */
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+    /* padding-bottom: 100px; */
+    /* flex-direction: column; */
 }
 
 .body {
@@ -124,3 +214,75 @@ nav{
     margin: 0;
     padding: 0;
 }
+
+.Sign {
+
+    height: 40px;
+    width: 120px;
+    background-color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    opacity: 80%;
+}
+
+.Sign :hover{
+
+    opacity: 100%;
+    
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.buttons {
+    height: auto;
+    width: 300px !important;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+    position: relative;
+    top: 50px;
+    right: 60px;
+    /* background-color: aqua; */
+
+}
+
+#Subscribe{
+
+    height: 40px;
+    width: 120px;
+    background-color: #4672cd;
+    color: white !important;
+    border-radius: 12px;
+    border: none !important;
+}
+
+#Browse {
+    height: 40px;
+    width: 120px;
+    background-color: white;
+    color: black !important;
+    border-radius: 12px;
+    border: none !important;
+}
+
+.icon {
+    height: 400px;
+    width: 200px;
+    /* background-color: #4672cd; */
+    
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-right: 10px;
+    position: relative;
+    right: 80px;
+    
+}
+
